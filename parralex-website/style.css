@@ -1,0 +1,85 @@
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight:400;
+    line-height:1.8em;
+    color: #666
+}
+.my__image--1{
+    background-image: url(images/image1.png);
+    min-height:100%;
+}
+
+
+.my__image--2{
+    background-image: url(images/image2.png);
+    min-height:400px;
+}
+
+
+.my__image--3{
+    background-image: url(images/image3.png);
+    min-height:400PX;
+}
+
+
+.my__image--1, 
+.my__image--2, 
+.my__image--3{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+
+}
+.text__upper{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform: uppercase;
+}
+.background__text{
+    background: #313534;
+    color: #fff;
+    padding: 20px;
+}
+.section{
+    padding: 50px 80px;
+    text-align: center;
+
+}
+.section__light{
+    background-color:#f4f4f4;
+    color: #666;
+}
+.section__dark{
+    background-color:#282e34;
+    color: #ddd;
+}
+@media(max-width:575px){
+    .text__upper{
+        font-size:20px;
+        letter-spacing:1px;
+    }
+    .section{
+        padding: 30px 50px;
+    }
+    html,body{
+        font-size:12px
+    }
+}
+@media(max-width:330px){
+    .text__upper{
+        font-size: 15px;
+    }
+}
